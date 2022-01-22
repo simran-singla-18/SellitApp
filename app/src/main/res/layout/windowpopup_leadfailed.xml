@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativefailed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context=".Activites.InprogressItemdescriptionActivity">
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="573dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="LEAD FAILED"
+            android:textColor="#1B6C9E"
+            android:textSize="@dimen/dim_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/round_corner"
+                android:elevation="10dp">
+
+                <Spinner
+                    android:id="@+id/spinnerreasonfailed"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/textspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/expand" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:text="Requoted Price"
+                android:textColor="#1B6C9E" />
+
+
+            <RelativeLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+
+                android:layout_height="30dp"
+                android:background="@drawable/round_corner"
+                android:elevation="10dp">
+
+                <EditText
+                    android:id="@+id/et_requoteprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:hint="Enter Amount"
+                    android:inputType="phone"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/dim_foreground_dark"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:text="Customer Asking Price"
+                android:textColor="#1B6C9E" />
+
+            <EditText
+                android:id="@+id/et_customerprice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/round_corner"
+                android:gravity="start"
+                android:hint="Enter Amount"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:textColorHint="@color/dim_foreground_dark"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:text="CAPTURE IMAGES"
+                    android:textColor="#1B6C9E" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Delhi"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_10"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/iv_captureonefailed"
+                            android:layout_width="@dimen/toolbar_profile_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/civ_mobileonefailed"
+                                android:layout_width="@dimen/toolbar_profile_widthnew"
+                                android:layout_height="@dimen/toolbar_profile_widthnew"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/mobile_icon" />
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_profile"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_menu_camera"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="1"
+                                tools:ignore="NotSibling" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/AppColor" />
+
+                        <LinearLayout
+                            android:id="@+id/iv_capturetwofailed"
+                            android:layout_width="@dimen/toolbar_profile_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/civ_mobiletwofailed"
+                                android:layout_width="@dimen/toolbar_profile_widthnew"
+                                android:layout_height="@dimen/toolbar_profile_widthnew"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/mobile_icon" />
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_profile"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_menu_camera"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="1"
+                                tools:ignore="NotSibling" />
+                        </LinearLayout>
+
+                        <!--
+                                                    <ImageView
+                                                        android:layout_width="35pt"
+                                                        android:layout_height="40pt"
+                                                        android:layout_margin="10dp"
+                                                        android:layout_weight="1"
+                                                        android:background="@drawable/teaser" />
+
+                                                    <ImageView
+                                                        android:layout_width="35pt"
+                                                        android:layout_height="40pt"
+                                                        android:layout_margin="10dp"
+                                                        android:layout_weight="1"
+                                                        android:background="@drawable/teaser" />
+                        -->
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/AppColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_10"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/iv_capturethreefailed"
+                            android:layout_width="@dimen/toolbar_profile_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/civ_mobilethreefailed"
+                                android:layout_width="@dimen/toolbar_profile_widthnew"
+                                android:layout_height="@dimen/toolbar_profile_widthnew"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/mobile_icon" />
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_profile"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_menu_camera"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="1" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/AppColor" />
+
+                        <LinearLayout
+                            android:id="@+id/iv_capturefourfailed"
+                            android:layout_width="@dimen/toolbar_profile_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/civ_mobilefourfailed"
+                                android:layout_width="@dimen/toolbar_profile_widthnew"
+                                android:layout_height="@dimen/toolbar_profile_widthnew"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/mobile_icon" />
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_profile"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_menu_camera"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="1"
+                                tools:ignore="NotSibling" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_leadcancel"
+                    android:layout_width="104dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:background="#707070"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_leadfailed"
+                    android:layout_width="104dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="#FF6A6A"
+                    android:gravity="center"
+                    android:text="Fail"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

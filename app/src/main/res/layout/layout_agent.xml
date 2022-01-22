@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/loginHeader"
+                android:layout_width="114pt"
+                android:layout_height="19pt"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Add new"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/toolbar_profile_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/toolbar_profile_width"
+                    android:layout_height="@dimen/toolbar_profile_width"
+                    android:layout_marginBottom="@dimen/activity_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/baseline_account_circle_black" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_plus"
+                    android:layout_width="@dimen/ic_plus_width"
+                    android:layout_height="@dimen/ic_plus_width"
+                    android:layout_alignBottom="@id/img_profile"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_plus"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="1" />
+            </RelativeLayout>
+
+            <!--  <ImageView
+                  android:layout_width="@dimen/dim_100"
+                  android:layout_height="@dimen/dim_100"
+                  android:layout_gravity="center"
+                  android:background="@drawable/shopkeeper" />
+          -->
+            <EditText
+                android:id="@+id/agentname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_37"
+                android:background="@drawable/gradient_white"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/view_divider_color"
+                android:textSize="@dimen/dim_14" />
+
+            <EditText
+                android:id="@+id/agentmailadd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_37"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/view_divider_color"
+                android:textSize="@dimen/dim_14" />
+
+            <EditText
+                android:id="@+id/agentphoneadd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_37"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white"
+                android:ems="10"
+                android:hint="Phone 91+"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/view_divider_color"
+                android:textSize="@dimen/dim_14" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/gradient_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/agentadharcardfile_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/browse"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:text="Adhar Card"
+                    android:textColor="@color/view_divider_color"
+                    android:textSize="@dimen/dim_14" />
+
+                <Button
+                    android:id="@+id/browse"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/gradient_white_grey"
+                    android:gravity="center"
+                    android:text="Choose File"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/agentadharadd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white"
+                android:ems="10"
+                android:hint="Adhar"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/dim_14"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/agentaddressadd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_70"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingTop="@dimen/dim_4"
+                android:textColorHint="@color/view_divider_color"
+                android:textSize="@dimen/dim_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelbtn"
+                    style="@style/phoneNo"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_weight="100"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/savebtn"
+                    style="@style/loginButton"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_weight="100"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

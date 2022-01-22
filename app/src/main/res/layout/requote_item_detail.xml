@@ -1,0 +1,3280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutToploac_childapolloip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/AppColor"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlback_requote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/back_requote"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_arrow_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_picksub_childapolloip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:paddingRight="@dimen/dim_40"
+                android:text="REQUOTE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/lnr_overclick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="DOES THE MOBILE SWITCH ON?"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/location_desip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Delhi"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/linrlayoutdcr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dim_20"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb_mobileswitchon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Mobile Swicth On"
+                                android:textColor="#707070"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dim_20"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="|"
+                                android:textColor="#707070"
+                                android:textSize="10sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_mobileswitchon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dim_10"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Working"
+                                android:textColor="#000000"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_marginLeft="@dimen/dim_3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="FUNCTIONAL PROBLEM "
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dim_23"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <CheckBox
+                                    android:id="@+id/cb_charging_porter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="false"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Charging Porter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lnr_frontcameramain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/lnr_frontcamera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_froncamera"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Font Camera" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_frontcamera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view1"
+                                android:paddingRight="25dp"
+                                android:text="Front Camera Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_backcameramain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_backcamera"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Back Camera" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_backcamera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view2"
+                                android:paddingRight="10dp"
+                                android:text="Back Camera Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_wifimain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_wifi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="WiFi" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_wifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view3"
+                                android:paddingRight="10dp"
+                                android:text="WiFi Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_volumebuttonmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_volumebutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Volume Button" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view4"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_volumebutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view4"
+                                android:paddingRight="10dp"
+                                android:text="Volume Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_batterymain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_battery"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Battery" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view5"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_batteryworking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view5"
+                                android:paddingRight="10dp"
+                                android:text="Battery Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_speakermain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_speaker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Speaker" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view6"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_speakingworking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view6"
+                                android:paddingRight="10dp"
+                                android:text="Speaker Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_fingertouchmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_fingertouch"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Finger Touch Senser" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view7"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_fingersensorgworking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view7"
+                                android:paddingRight="10dp"
+                                android:text="Finger Touch Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_bluetoothmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_bluetooth"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bluetooth" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view8"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_bluetoothworking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view8"
+                                android:paddingRight="10dp"
+                                android:text="Bluetooth Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_charging_portmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_20"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_charging_port"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Charging Port" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view9"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_charninggworking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view9"
+                                android:paddingRight="10dp"
+                                android:text="Charging Port Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/tv_workingporter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:text="Charging Port Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/dim_11"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_powerbuttonmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_powerbutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Power Button" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view10"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_powerbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view10"
+                                android:paddingRight="10dp"
+                                android:text="Power Button Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_facesensormain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_facesensor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Face Sensor" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view11"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_facesensor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view11"
+                                android:paddingRight="10dp"
+                                android:text="Face Sensor Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_audioicmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_audioic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Audio IC" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view12"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_audioic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view12"
+                                android:paddingRight="10dp"
+                                android:text="Audio Ic Not Working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_cameraglassmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cd_cameraglass"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Camera Glass" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view13"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_cameraglass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view13"
+                                android:paddingRight="10dp"
+                                android:text="Camera glass Not Broken"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_silent_buttonmain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_silent_button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Silent Button" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view14"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_silentbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view14"
+                                android:paddingRight="10dp"
+                                android:text="Silent button not working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_microphonemain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_microphone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="MircoPhone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view15"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_microphone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view15"
+                                android:paddingRight="10dp"
+                                android:text="Mircro phone not working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_vibratormain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_vibrator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Vibrator" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view16"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_vibrater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view16"
+                                android:paddingRight="10dp"
+                                android:text="Vibrator is not working"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cb_copydisplay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Copy Display" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/view17"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/AppColor" />
+
+
+                            <TextView
+                                android:id="@+id/tv_copydisplay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_toRightOf="@id/view17"
+                                android:paddingRight="10dp"
+                                android:text="Copy Display"
+                                android:textColor="@color/black"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="DOES YOUR PHONE HAVE COPY DISPLAY?"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Copy Display" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:background="@color/AppColor" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:layout_marginTop="@dimen/dim_7"
+                                    android:orientation="horizontal">
+
+                                    <RadioGroup
+                                        android:id="@+id/radioGroupcopydisplay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_yescopydisplay"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="YES"
+                                            android:textSize="11dp" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_nocopydisplay"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="No"
+                                            android:textSize="11dp" />
+
+                                    </RadioGroup>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="DO YOU HAVE THE FOLLOWING?"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:padding="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="false"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Charging Porter" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lnr_earphonemain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_earphone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Earphone" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <View
+                                    android:id="@+id/view111"
+                                    android:layout_width="1dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/AppColor" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_earphone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_toRightOf="@id/view111"
+                                    android:paddingRight="25dp"
+                                    android:text="Earphone not working"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:padding="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/lnr_validbillmain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_validbill"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Valid Bill" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <View
+                                    android:id="@+id/view222"
+                                    android:layout_width="1dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/AppColor" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_validbill"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_toRightOf="@id/view222"
+                                    android:paddingRight="10dp"
+                                    android:text="Valid bill avialable"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:padding="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/lnr_chargermain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_charger"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Charger" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <View
+                                    android:id="@+id/view333"
+                                    android:layout_width="1dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/AppColor" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_charge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_toRightOf="@id/view333"
+                                    android:paddingRight="10dp"
+                                    android:text="Charger avialable"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:padding="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/lnr_boxmain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_box"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Box" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <View
+                                    android:id="@+id/view444"
+                                    android:layout_width="1dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/AppColor" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_box"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_toRightOf="@id/view444"
+                                    android:paddingRight="10dp"
+                                    android:text="Box avialable"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp" />
+                            </RelativeLayout>
+
+                            <!--   <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal">
+
+
+                                   <LinearLayout
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="match_parent"
+                                       android:layout_margin="10dp"
+                                       android:orientation="vertical">
+
+                                       <LinearLayout
+                                           android:id="@+id/lnr_earphonemain"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="@dimen/dim_23"
+                                           android:orientation="horizontal">
+
+                                           <CheckBox
+                                               android:id="@+id/cb_earphone"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:checked="false"
+                                               android:gravity="center" />
+
+                                           <TextView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="Earphone" />
+
+                                       </LinearLayout>
+
+                                       <LinearLayout
+                                           android:id="@+id/lnr_validbillmain"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="@dimen/dim_23"
+                                           android:orientation="horizontal">
+
+                                           <CheckBox
+                                               android:id="@+id/cb_validbill"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:checked="false"
+                                               android:gravity="center" />
+
+                                           <TextView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="Valid Bill" />
+
+                                       </LinearLayout>
+
+                                       <LinearLayout
+                                           android:id="@+id/lnr_chargermain"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="@dimen/dim_23"
+                                           android:orientation="horizontal">
+
+                                           <CheckBox
+                                               android:id="@+id/cb_charger"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:checked="false"
+                                               android:gravity="center" />
+
+                                           <TextView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="Charger" />
+
+                                       </LinearLayout>
+
+                                       <LinearLayout
+                                           android:id="@+id/lnr_boxmain"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="@dimen/dim_23"
+                                           android:orientation="horizontal">
+
+                                           <CheckBox
+                                               android:id="@+id/cb_box"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:checked="false"
+                                               android:gravity="center" />
+
+                                           <TextView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="Box" />
+
+                                       </LinearLayout>
+                                   </LinearLayout>
+
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="horizontal">
+
+                                   <LinearLayout
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="match_parent"
+                                       android:layout_marginLeft="15dp"
+                                       android:layout_marginTop="15dp"
+                                       android:orientation="vertical">
+
+                                       <View
+
+                                           android:layout_width="1dp"
+                                           android:layout_height="15dp"
+                                           android:layout_marginTop="2dp"
+                                           android:background="@color/AppColor" />
+
+
+                                       <View
+                                           android:layout_width="1dp"
+
+                                           android:layout_height="15dp"
+                                           android:layout_marginTop="7dp"
+                                           android:background="@color/AppColor" />
+
+
+                                       <View
+                                           android:layout_width="1dp"
+
+                                           android:layout_height="15dp"
+                                           android:layout_marginTop="7dp"
+                                           android:background="@color/AppColor" />
+
+                                       <View
+                                           android:layout_width="1dp"
+
+                                           android:layout_height="15dp"
+                                           android:layout_marginTop="7dp"
+                                           android:background="@color/AppColor" />
+
+                                   </LinearLayout>
+
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_margin="10dp"
+                                       android:orientation="vertical">
+
+                                       <TextView
+                                           android:id="@+id/tv_earphone"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginTop="3dp"
+                                           android:text="Earphone not working"
+                                           android:textColor="@color/black"
+                                           android:textSize="@dimen/dim_12" />
+
+                                       <TextView
+                                           android:id="@+id/tv_validbill"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginTop="7dp"
+                                           android:text="Valid bill avialable"
+                                           android:textColor="@color/black"
+                                           android:textSize="@dimen/dim_12" />
+
+                                       <TextView
+                                           android:id="@+id/tv_charge"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginTop="8dp"
+                                           android:text="Charger avialable"
+                                           android:textColor="@color/black"
+                                           android:textSize="@dimen/dim_12" />
+
+                                       <TextView
+                                           android:id="@+id/tv_box"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginTop="6dp"
+                                           android:text="Box avialable"
+                                           android:textColor="@color/black"
+                                           android:textSize="@dimen/dim_12" />
+
+                                   </LinearLayout>
+
+                               </LinearLayout>-->
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="MOBILE AGE"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mobile Age" />
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="" />
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="" />
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_130"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="vertical">
+
+                                    <View
+
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:background="@color/AppColor" />
+
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/AppColor" />
+
+
+                                    <View
+                                        android:layout_width="1dp"
+
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/AppColor" />
+
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/AppColor" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/AppColor" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/AppColor" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdmobileage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_underthree"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" Under 3 Months"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_underthreesix"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" 3 To 6 Months"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_undersixeleven"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" 6 To 11 Months"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_underaboveleven"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" Above 11 Months"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_underthreemonth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:id="@+id/tv_under3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Under 3 Month"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_underthreesixmonth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:id="@+id/tv_under6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="3 To 6 Months"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_undersixelelevenmonth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:id="@+id/tv_under11"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="6 To 11 Months"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_aboveelevenmonth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:id="@+id/tv_above11"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Above 11 Month"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="ARE YOU ABLE TO MAKE AND RECEIVE CALL?"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Able To Take Call" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:background="@color/AppColor" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:layout_marginTop="@dimen/dim_7"
+                                    android:orientation="horizontal">
+
+                                    <RadioGroup
+                                        android:id="@+id/radioGroupablemakecall"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_yesabletoreceivecall"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="YES"
+                                            android:textSize="11dp" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_noabletoreceivecall"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="No"
+                                            android:textSize="11dp" />
+
+                                    </RadioGroup>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="IS YOUR DEVICE'S TOUCH SCREEN WORKING PROPERLY?"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Touch Working" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="vertical">
+
+                                    <View
+
+                                        android:layout_width="1dp"
+                                        android:layout_height="15dp"
+                                        android:background="@color/AppColor" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dim_23"
+                                    android:layout_marginTop="@dimen/dim_7"
+                                    android:orientation="horizontal">
+
+                                    <RadioGroup
+                                        android:id="@+id/radioGroupcoptouchscreenwproperly"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_yestouchworking"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="YES"
+                                            android:textSize="11dp" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_notouchworking"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dim_10"
+                                            android:layout_weight="1"
+                                            android:checked="false"
+                                            android:text="No"
+                                            android:textSize="12dp" />
+
+                                    </RadioGroup>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="PHONE'S OVERALL CONDITION"
+                        android:textColor="#1B6C9E"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="SIM (Network)"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupsn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/radio_yessn"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dim_10"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" YES"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/radio_nosn"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dim_10"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text=" No"
+                                                android:textSize="12dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dead Pixel/Spots in screen" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdeadpixel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_largeheavyvisiblespotsonscreens"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Large/ heavy visible spots on screen"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_multiplevisiblespotsonscreens"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Multiple visible spots on screen"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_minordiscolorationorsmallspotsonscreens"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Minor discoloration or small spots on screen"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_nospotsonscreens"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="3dp"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No spots on screen"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_26"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_largeheavy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="match_parent"
+                                            android:text="Large/ Heavy Visible Spots On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_multiplevisible"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="match_parent"
+                                            android:text="Multiple Visible Spots On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_26"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_minordiscoloration"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="match_parent"
+                                            android:text="Minor Discoloration Or Smalll Spots On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_spotonscreenno1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="No Spots On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Visible Lines On Screen" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdvisiblelines"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_displayfadedaloncornerscreen"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Display faded along corners"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_multiplelineondisplay"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Multiple lines on Display"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_nolinesondisplay"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No line(s) on Display"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_9"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_displayfaded"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Display Faded Alon Corner Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_multipleline"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Multiple Lines On Display"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_nolineondisplay"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:layout_weight="1"
+                                            android:text="No Line(S) On Display"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Screen Physical Condition" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdscreenphysical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_screencrackedglassbroken"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Screen cracked/ glass broken"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_damagtornscreenonedges"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Damaged/ Torn screen on edges"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_heavyscartchedonscreen"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Heavy scratches on screen"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_twofourscratchedonscreen"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="1-2 scratches on screen"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_noscratchedonscreen"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No scratches on screen"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_screencracked"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Screen Cracked/Glass Broken"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_damagedtorn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Damaged/Torn Screen on Edges"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_heavyscratch"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Heavy Scratched On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_scratchfourtwoonscreen"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="4-2 Scratched On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_noscratchonscreen"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="No Scratched On Screen"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Scratched On Phone Body" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdscratchedon"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_majorscratched"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Major scratches"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_lessthentwoscratched"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Less than 2 scratches"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_noscratched"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No scratches"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_majorscratched"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Major Scratched"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_lessthentwoscratched"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Less Then 2 Scratched"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_noscratched"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="No Scratched"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dents On Phone Body " />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupddentonphone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_multipleheavyvisiblebodydents"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Multiple/heavy visible body dents"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_twoorlessminorbodydents"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="2 or less minor body dents"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_nodents"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No dents"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_multipleheavyvisiblebodydent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Multiple/Heavy Visible Body Dents"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_twoorlessminorbodydents"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="2 Or Less Minor Body Dents"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_nodents"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="No Dents"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone Side/Back Panel Condition " />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdphonesideback"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_crackedbrokensideorbackpanel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Cracked/ broken side or back panel"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_missingbacksideorbackpanel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Missing side or back panel"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_nodefectonsideorbackpanel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="No defect on side or back panel"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_crackedbrokensideorbackpanel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Crack/ Broken Side Or Back Panel"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_missingbacksidebackpanel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Missing Back Side Or Back Panel"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_nodefectonsideorbackpanel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="No Defect On Side Or Back Panel"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bent Phone Or Loose Screen" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dim_7"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupdbentphone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/rb_bentcurvedpanel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Bent/ curved panel"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_loosescreengapinscreenandbody"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Loose screen (Gap in screen and body)"
+                                                android:textSize="11dp" />
+
+                                            <RadioButton
+                                                android:id="@+id/rb_phonenotbent"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:checked="false"
+                                                android:text="Phone not bent"
+                                                android:textSize="11dp" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_26"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_bentcurvedpanel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Bent/Curved Panel"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                        <CheckBox
+                                            android:id="@+id/cb_loosescreengapinscreenandbody"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="match_parent"
+                                            android:text="Loose Screen (Gap In Screen And Body)"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dim_23"
+                                        android:layout_marginTop="@dimen/dim_10"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <CheckBox
+                                            android:id="@+id/cb_phonenotbent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="false"
+                                            android:gravity="center" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/dim_150"
+                                            android:layout_height="@dimen/dim_30"
+                                            android:text="Phone Not Bent"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/dim_9" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--new recote-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_completeddcrtyt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#1B6C9E"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Get Exact Value"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

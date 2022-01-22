@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:gravity="start"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headermain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logo_the_realfarmer" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footermain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headermain"
+        android:layout_marginTop="10dp">
+
+        <ScrollView
+            android:id="@+id/scrollholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/crd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardBackgroundColor="#FFFFFF"
+                card_view:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/covercview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/verifynumbertext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp"
+                            android:gravity="center"
+                            android:text="@string/verifing_mobile_number_for_otp"
+                            android:textColor="@color/black"
+                            android:textSize="19dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/enterotptext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/covercview"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="75dp"
+                            android:layout_marginRight="25dp"
+                            android:gravity="start"
+                            android:text="@string/otp_verification"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_usermobileforotp"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/gradient_white"
+                            android:ems="10"
+                            android:hint="@string/enter_10_digitnumber"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="7dp"
+                            android:phoneNumber="true"
+                            android:textColor="#010302"
+                            android:textColorHint="#B6B6B4"
+                            android:textSize="17dp" />
+
+                        <Button
+                            android:id="@+id/btn_Submit_for_mobileverific"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@color/darkgreen"
+                            android:gravity="center"
+                            android:text="@string/varify"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/already_exist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/covercview"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginRight="25dp"
+                            android:gravity="center"
+                            android:text="Login with your password !"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold|italic"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

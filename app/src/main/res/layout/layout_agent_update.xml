@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        style="@style/loginHeader"
+        android:layout_width="114pt"
+        android:layout_height="19pt"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Update"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/agentnameupdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_37"
+        android:background="@drawable/gradient_white"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/view_divider_color"
+        android:textSize="@dimen/dim_14" />
+
+    <EditText
+        android:id="@+id/agentmailaddupdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_37"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/view_divider_color"
+        android:textSize="@dimen/dim_14" />
+
+    <EditText
+        android:id="@+id/agentphoneaddupdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_37"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_white"
+        android:ems="10"
+        android:hint="Phone 91+"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/view_divider_color"
+        android:textSize="@dimen/dim_14" />
+
+    <EditText
+        android:id="@+id/agentaddressaddupdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_70"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Address"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingTop="@dimen/dim_4"
+        android:textColorHint="@color/view_divider_color"
+        android:textSize="@dimen/dim_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelbtnupdate"
+            style="@style/phoneNo"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_weight="100"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/savebtnupdate"
+            style="@style/loginButton"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_weight="100"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Save" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

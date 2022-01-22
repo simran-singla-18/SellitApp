@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    /* packagingOptions {
+         exclude 'META-INF/proguard/androidx-annotations.pro'
+     }
+     packagingOptions {
+         exclude 'META-INF/DEPENDENCIES'
+         exclude 'META-INF/LICENSE'
+         exclude 'META-INF/LICENSE.txt'
+         exclude 'META-INF/license.txt'
+         exclude 'META-INF/NOTICE'
+         exclude 'META-INF/NOTICE.txt'
+         exclude 'META-INF/notice.txt'
+         exclude 'META-INF/ASL2.0'
+     }*/
+    compileSdkVersion 30
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "app.reatailx.ulietapp"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "4g"
+    }
+    android {
+        defaultConfig {
+            vectorDrawables.useSupportLibrary = true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.1'
+    //dexter permissions
+    implementation "com.karumi:dexter:5.0.0"
+
+    // circular imageview
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.bumptech.glide:annotations:4.7.1'
+    implementation('com.github.bumptech.glide:okhttp3-integration:4.0.0') {
+        exclude group: 'glide-parent'
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
+
+/*start*/
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //For Razorpay checkout SDK
+    implementation 'com.razorpay:checkout:1.6.10'
+
+    //Enabled for google pay SDK integration
+    //You need to whitelist your app package name at Razorpay to use this.
+    //implementation(name: 'razorpay-googlepay-1.3.0', ext: 'aar')
+    //implementation(name: 'google-pay-client-api-1.0.0', ext: 'aar')
+
+    //Enable for Amazon pay SDK integration.
+    //You need to whitelist your apps package name at razrpay first to use this
+    implementation(name: 'razorpay-amazonpay-1.3.0', ext: 'aar')
+    implementation(name: 'PayWithAmazon', ext: 'aar')
+    //implementation(name: 'checkout-otpelf',ext: 'aar')
+    // implementation 'com.android.support:customtabs:28.0.0''
+
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.0'
+    /*implementation "androidx.core:core-ktx:1.3.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"*/
+    /*end*/
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+}
+//apply plugin: 'com.google.gms.google-services'
+

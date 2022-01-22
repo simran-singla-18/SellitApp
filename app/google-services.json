@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "347129311059",
+    "project_id": "sellit-637fa",
+    "storage_bucket": "sellit-637fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347129311059:android:4c5cee204315f9431bbba6",
+        "android_client_info": {
+          "package_name": "app.reatailx.sellitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347129311059-9ivr1f9dsp29vcdiq81l4hljddgaq3oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZtCgKkXh11crnOzhOjo2FM7hrCH5HE9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347129311059-9ivr1f9dsp29vcdiq81l4hljddgaq3oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

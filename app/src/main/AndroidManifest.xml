@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.reatailx.sellitapp"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <!--<uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--<uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />-->
+
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--<uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="app.reatailx.sellitapp.Activites.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowIsTranslucent="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.ItemdescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.InprogressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.AgentMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.AgentAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.InprogressItemdescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.AgentUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.TodaysTommarrowLeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.RequoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.PaymentCommisionWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.PaymentVirtualBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.BankTransferPayOnlineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.CompleteLeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.CompleteleadItemdescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.WalletMainPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.WalletMainPaymentDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.TransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.TobeFailedLeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.reatailx.sellitapp.Activites.AndroidCameraExample"
+            android:screenOrientation="landscape" />
+        <!--rzp_test_DctUhGzJkfw4OF // of sellit app
+         // rzp_test_PZ20v6jy7xg9yi dheeraj test-->
+        <!-- Add your API key here // rzp_live_ILgsfZCZoFIKMb // rzp_live_4Gabs2fSUnGih5-->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_4Gabs2fSUnGih5" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <!-- Firebase Notifications -->
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.MyFirebaseInstanceIDService"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+    </application>
+
+</manifest>

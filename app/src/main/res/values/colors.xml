@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="linear_bg">#FCE9E9</color>
+    <color name="transparentblack">#90000000</color>
+
+    <color name="colorselectdnon">#A5A5A5</color>
+    <color name="colorselectd">#D04000</color>
+
+    <color name="color_cardview_yellow">#FFF280</color>
+    <color name="color_cardview_white">#FFFFFF</color>
+    <color name="color_cardview_grey">#BABABA</color>
+
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+    <color name="black_transparent">#333333</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="sliding_list_divider_color">#DADADA</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellow">#FFD700</color>
+    <color name="red">#FF6347</color>
+    <color name="green">#7CFA58</color>
+    <color name="darkgreen">#16A102</color>
+    <color name="white">#FFFFFf</color>
+    <color name="incentivebonuscolor">#FFF280</color>
+    <color name="rupeecolor">#949494</color>
+    <color name="black">#000000</color>
+    <color name="lowblack">#151515</color>
+
+    <color name="moneybaggrey">#949494</color>
+
+    <color name="darkblue">#FF1D2935</color>
+
+    <color name="unique_grey">#303234</color>
+    <color name="blacl_lowdark">#0D0C0D</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="greylight">#949494</color>
+    <color name="darkGrey">#58595b</color>
+    <color name="greymoredark">#313132</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dim_foreground_dark">#bebebe</color>
+    <color name="dim_foreground_dark_disabled">#80bebebe</color>
+
+
+    <color name="off_white">#f1f5f7</color>
+    <color name="blue_selector">#00aeea</color>
+    <color name="red_negative_progress">#ff3333</color>
+
+    <color name="bg_color">#e3ebee</color>
+    <color name="color_grey">#2a2d30</color>
+
+    <color name="background">#E0E0E0</color>
+    <color name="pink" >#F826C2</color>
+
+
+
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#1B6C9E</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#2661FA</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="gray">#817E7E</color>
+    <color name="AppColor">#1B6C9E</color>
+    <color name="AppBackground">#F1F8F8</color>
+    <color name="AppWhite">#FFFFFF</color>
+    <color name="AppBlack">#FF000000</color>
+    <color name="AppTextGray">#707070</color>
+    <color name="AppTextColor">#254786</color>
+    <color name="AppShadow">#1B1C201A</color>
+
+</resources>

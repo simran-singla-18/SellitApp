@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_Available"
+            android:title="Available" />
+        <item
+            android:id="@+id/nav_inprogress"
+            android:title="In Progress" />
+        <item
+            android:id="@+id/nav_today"
+            android:title="Today" />
+        <item
+            android:id="@+id/nav_tomorrow"
+            android:title="Tomorrow" />
+        <item
+            android:id="@+id/nav_complete"
+            android:title="Complete" />
+        <item
+            android:id="@+id/nav_tobefailed"
+            android:title="To be Failed" />
+        <item
+            android:id="@+id/nav_failed"
+            android:title="Failed" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:title="Transaction" />
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Payment" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_agent"
+            android:title="Agent" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out" />
+        <item
+            android:id="@+id/nav_version"
+            android:title="V 1.0.2.52" />
+    </group>
+
+    <item
+        android:title="Communicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
